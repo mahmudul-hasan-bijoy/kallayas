@@ -1,0 +1,84 @@
+.button {
+	border: none;
+	font-size: 1.2rem;
+	padding: 0.8rem 1.8rem;
+	border-radius: 10rem;
+	-webkit-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+	@include respond (phone) {
+		font-size: 1rem;
+		padding: .5rem 1.5rem;
+	}
+	&__red {
+		text-transform: uppercase;
+		background-color: $button_red;
+		-webkit-box-shadow: 0px .5rem 5rem 0px rgba($button_red,0.5);
+		        box-shadow: 0px .5rem 5rem 0px rgba($button_red,0.5);
+		&:hover {
+			color: $button_red;
+			background-color: $white;
+		}
+	}
+	&__text {
+		-webkit-transition: .3s all;
+		-o-transition: .3s all;
+		transition: .3s all;
+		padding: .5rem;
+	}
+	&__black {
+		color: $white;
+		text-transform: uppercase;
+		background-color: $black;
+		-webkit-box-shadow: 0 .5rem 3rem rgba($black,0.8);
+		        box-shadow: 0 .5rem 3rem rgba($black,0.8);
+		&:hover {
+			color: $button_red;
+			background-color: $white;
+		}
+	}
+	&__grey {
+		font-size: .8rem;
+		color: $white;
+		text-transform: uppercase;
+		background-color: #16202A;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		&:hover {
+			background-color: $button_red;
+		}
+		@include respond (phone) {
+			padding: .8rem 1rem;
+		}
+	}
+	&__icon {
+		margin-right: .5rem;
+	}
+	&__link {
+		text-transform: Capitalize;
+		font-size: 1.2rem;
+		font-weight: 100;
+		span {
+			margin-left: .5rem;
+		}
+		&:hover {
+			color: $button_red;
+			text-decoration: underline;
+		} 
+	}
+	&__group {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: right;
+		    -ms-flex-pack: right;
+		        justify-content: right;
+		gap: 1.5rem;
+		@include respond(mini-tab) {
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			padding-bottom: 3rem;
+		}
+	}
+}

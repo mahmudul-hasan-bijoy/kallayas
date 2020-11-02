@@ -1,0 +1,26 @@
+.category {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	gap: 1rem;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	@include respond (phone) {
+		font-size: 1rem;
+	}
+	&__yellow {
+		padding: .1rem .4rem;
+		background-color: $cat_yellow;
+		border-radius: .2rem;
+	}
+	&__blue {
+		padding: .1rem .4rem;
+		background-color: $cat_blue;
+		border-radius: .2rem;
+	}
+	&__brown {
+		padding: .1rem .4rem;
+		background-color: $cat_orange;
+		border-radius: .2rem;
+	}
+}

@@ -1,0 +1,91 @@
+.container {
+	width: 980px;
+	@include respond (phone) {
+		width: 100%;
+	}
+}
+.current {
+	color: $button_red !important;
+}
+.avenger {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	height: 100%;
+	.movie {
+		text-align: left !important;
+	}
+	.category {
+		justify-content: left !important;
+	}
+	.button__group {
+		justify-content: left !important;
+	}
+}
+.MI {
+	//height: 50vh;
+	padding: 10rem 0 5rem 0;
+	@include respond (mini-tab) {
+		padding: 5rem 0;}
+	background-image: url(../img/second-sec_bg.png);
+	background-position: center right;
+	background-size: cover;background-repeat: no-repeat; 
+}
+.TM { 
+	padding: 5rem 0;
+	.short-title {
+		padding-top: 5rem;
+		padding-bottom: 0 !important;
+	}
+}
+.JW {
+	//height: 70vh;
+	background-image: url(../img/jurassic_bg.jpeg);
+	background-position: center;
+	background-size: cover;background-repeat: no-repeat;
+}
+.VN {
+	padding: 5rem 0;
+	background-image: url(../img/venom_bg.png);
+	background-position: center;
+	background-size: cover;background-repeat: no-repeat;
+}
+
+.HG {
+	padding: 5rem 0;
+}
+
+.favourites {
+	padding: 5rem 0;
+}
+
+.short-title {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	opacity: .7;
+	padding-bottom: 1.5rem;
+}
+
+.bg-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $bg;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 5rem;
+    @include respond (tab-port) {
+    	flex-wrap: wrap;
+    }
+}
+
+// .movie__box {
+// 	display: none;
+// }

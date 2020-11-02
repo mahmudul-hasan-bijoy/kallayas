@@ -1,0 +1,51 @@
+.swiper-container.hero-slider {
+    position: relative;
+	width: 80%;
+    //height: 50vh;
+	// margin: 0 auto;
+	padding-top: 4rem;
+    z-index: 11;
+}
+.swiper-container.trend-movies {
+    width: 90%;
+    position: relative;
+    padding-top: 4rem;
+}
+
+.swiper-slide {
+    img {
+        width: 17rem;
+        height: 17rem;
+    }
+}
+.swiper-slide.trendy-movies {
+    flex: 1;
+}
+.swiper-prev {
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    left: 0rem;
+    top: 60%;
+}
+.swiper-next {
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 0rem;
+    top: 60%;
+}
+.swiper-trendy-prev {
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    left: 20rem;
+    top: 74%;
+}
+.swiper-trendy-next {
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 20rem;
+    top: 74%;
+}

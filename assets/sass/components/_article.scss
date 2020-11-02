@@ -1,0 +1,104 @@
+.article {
+	padding: 5rem 0 8rem 0;
+	&__right {
+		flex: 3;
+		.movie__title {
+			color: $white;
+		}
+		p {
+			text-align: justify;
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+		&-img {
+			width: 100%;
+			outline: 1px solid $img_outline;
+			outline-offset: .3rem;
+			transition: .3s all;
+			&:hover {
+				outline-color: $img_hover;
+			}
+		}
+	}
+	&__meta {
+		display: flex;
+		align-items: center;
+		a {
+			padding-right: 3rem;
+			i {
+				padding-right: .5rem;
+			}
+		}
+	}
+	&__share {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		justify-content: center;
+		padding: 1rem 0rem 3rem 0;
+		a {
+			color: #f7f7f7;
+			font-size: 1.2rem;
+			border: 1px solid #f7f7f7;
+			padding: .2rem .5rem;
+			background-color: rgba($white,.1);
+			@include respond (px-440) {
+				font-size: 1rem;
+			}
+			&:hover {
+				border-color: $button_red;
+				background-color: $black;
+			}
+			&:hover .fa-facebook-f {
+				color: blue;
+				background-image: linear-gradient(to top, rgba(#139EF8,1),rgba(#0778E8,1));
+				background-clip: text;
+				color: transparent;
+			}
+			&:hover .fa-instagram {
+				color: pink;
+				background-image: linear-gradient(to top, rgba(#4D5ECA,1),rgba(#FF6B43,1));
+				background-clip: text;
+				color: transparent;
+			}
+			&:hover .fa-twitter {
+				color: #50ABF1;
+			}
+			&:hover .fa-linkedin-in {
+				color: #0077B5;
+			}
+			&:hover .fa-stack-overflow {
+				color: #0077B5;
+			}
+			&:hover .fa-envelope {
+				color: teal;
+			}
+			i {
+				text-align: center;
+				padding-right: 1rem;
+				@include respond (mini-tab) {
+					display: none;
+				}
+				@include respond (phone) {
+					display: inline-block;
+				}
+				@include respond (px-440) {
+					display: none;
+				}
+			}
+		}
+		&-title {
+			font-size: 1.2rem;
+		}
+	}
+	&__related-post {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		.sidebar {
+			margin-top: 0;
+		}
+	}
+}

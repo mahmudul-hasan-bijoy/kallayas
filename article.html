@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+   <!-- Display webpage in edge mode/IE in highest supported document mode -->
+  <meta http-equiv="x-ua-compitable" content="ie=edge, chrome 1">
+  <title>Kallayas | Articles</title>
+  <meta name="description" content="">
+  <!-- Optimizations for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- VENDOR CSS FILES -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <!-- MAIN CSS FILE -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+        <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+            <![endif]-->
+</head>
+
+<body>
+
+  <!--===========================
+    HEADER
+  ============================-->
+  <header class="header">
+    <div class="bg-overlay"></div>
+    <nav class="navigation">
+      <div class="container navigation__flex">
+        <a href="index.html" class="navigation__brand">
+          <img src="assets/img/header_logo.png" alt="Logo" class="img-fluid">
+        </a>
+        <ul>
+          <li><a class="current" href="index.html">Homepage</a></li>
+          <li><a href="blog.html">Movies</a> </li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="list.html">My List</a></li>
+
+          <form class="d-flex">
+            <input class="navigation__search" type="search" placeholder="Search...">
+            <button class="navigation__search-icon" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <li><a href="javascript:void(0)" class="button button__text">Login</a></li>
+          <li><a href="javascript:void(0)" class="button button__red">sign Up</a></li>
+        </ul>
+
+          <!-- mobile navigation -->
+          <div class="navigation__mobile">
+            <a href="javascript:void(0)" class="navigation__phone" onclick="openNav()">
+              <span class="bar"><i class="fas fa-ellipsis-v"></i></span>
+            </a>
+            <div id="myNav" class="navigation__overlay">
+              <a href="javascript:void(0)" onclick="closeNav()" class="navigation__close">&times;</a>
+
+              <div class="navigation__overlay-content">
+
+                <form class="d-flex">
+                  <input class="navigation__search" type="search" placeholder="Search...">
+                  <button class="navigation__search-icon" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <a href="index.html" onclick="closeNav()" class="navigation__overlay-links">Homepage</a>
+                <a href="blog.html" onclick="closeNav()" class="navigation__overlay-links">Movies</a>
+                <a href="favourites.html" onclick="closeNav()" class="navigation__overlay-links">Favourites</a>
+                <a href="list.html" onclick="closeNav()" class="navigation__overlay-links">My list</a>
+                <div class="navigation__buttons">
+                  <a href="javascript:void(0)" onclick="closeNav()" class="button button__red">Login</a>
+                  <a href="javascript:void(0)" onclick="closeNav()" class="button button__red">sign Up</a>
+                </div>
+              </div>
+
+            </div> <!-- navigation__overlay -->
+          </div>
+
+      </div>
+    </nav>
+
+    <!--===========================
+      MOVIE ARTICLE
+    ============================-->
+     <section class="section article">
+      <div class="container">
+        <div class="sidebar__article">
+
+          <div class="sidebar__article-left">
+            <div class="sidebar__article-search">
+              <input type="search" placeholder="search" class="sidebar__article-search--input">
+              <button class="sidebar__article-search--icon" type="submit"><span><i class="fas fa-search"></i></span></button>
+            </div>
+            
+            <div class="sidebar__article-recent">
+              <h6 class="sidebar__article-title">Recent posts</h6>
+              <div class="grid-article">
+                <div class="sidebar">
+                  <img src="assets/img/poster6.jpg" class="img-fluid">
+                  <a href="javascript:void(0)">
+                    <h6 class="sidebar__content">How much cost to do a movie like Hunger Games</h6>
+                  </a>
+                </div>
+                <div class="sidebar">
+                  <img src="assets/img/poster7.jpg" class="img-fluid">
+                  <a href="javascript:void(0)">
+                    <h6 class="sidebar__content">How much cost to do a movie like Hunger Games</h6>
+                  </a>
+                </div>
+                <div class="sidebar">
+                  <img src="assets/img/poster8.jpg" class="img-fluid">
+                  <a href="javascript:void(0)">
+                    <h6 class="sidebar__content">How much cost to do a movie like Hunger Games</h6>
+                  </a>
+                </div>
+                <div class="sidebar">
+                  <img src="assets/img/poster9.jpg" class="img-fluid">
+                  <a href="javascript:void(0)">
+                    <h6 class="sidebar__content">How much cost to do a movie like Hunger Games</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-article-3 mt-md">
+              <div class="sidebar__article-categories">
+                <h6 class="sidebar__article-title">Categories</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">- &nbsp; movies</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; serials</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; favourites</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; images</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; videos</a></li>
+                </ul>
+              </div>
+              <div class="sidebar__article-archives">
+                <h6 class="sidebar__article-title">Archives</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">- &nbsp; april 2017</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; june 2018</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; March  2019</a></li>
+                </ul>
+              </div>
+              <div class="sidebar__article-meta">
+                <h6 class="sidebar__article-title">meta</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">- &nbsp; login</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; comment RSS</a></li>
+                  <li><a href="javascript:void(0)">- &nbsp; wordpress.org</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>  <!-- sidebar__article-left -->
+          <div class="article__right">
+            <img src="assets/img/The_Hunger_Games_Catching_Fire-227805812-large.jpg" class="article__right-img">
+            <h2 class="movie__title">The Hunger Games : Catching Fire</h2>
+            <div class="article__meta mb-sm">
+              <a href="javascript:void(0)">
+                <i class="fas fa-comments"></i>5
+              </a>
+              <a href="javascript:void(0)">
+                <i class="fas fa-heart"></i>23
+              </a>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero vero quaerat officiis optio totam ipsa incidunt praesentium ipsum voluptates consequuntur aperiam doloremque dignissimos at ea dolorum laudantium, blanditiis explicabo porro alias similique aspernatur autem.</p>
+            <p>Sapiente, reprehenderit, quam. Ea, optio sunt consequuntur rem maxime, voluptas officiis nesciunt sequi laborum aperiam saepe iusto numquam iure tempora modi earum amet vero et tenetur ad? Facere exercitationem fuga vel facilis</p>
+            <p>sunt consequuntur quaerat dolore id beatae perspiciatis? Vero itaque, quibusdam sequi sit mollitia ipsum distinctio esse dolorem impedit eius aspernatur laborum recusandae dolores magnam dolorum. Ducimus temporibus soluta illum voluptatem quisquam nulla ipsum, facilis doloribus dolore aliquam commodi rerum animi similique repellendus amet fuga! Enim corporis quia, recusandae laborum ipsa sed inventore obcaecati accusantium fuga, reiciendis fugiat</p>
+            <p>cum perferendis quo ex, tempore ut natus aut atque? Repudiandae, magni ab nobis, consequatur autem voluptates earum quod veritatis harum reiciendis, eos quia delectus labore repellendus in?</p>
+
+            <!-- share article start -->
+            <h6 class="article__share-title mt-md">Share This:</h6>
+            <div class="article__share">
+              <a href="javascript:void(0)"class="article__share-fb"><i class="fab fa-facebook-f"></i>Facebook</a>
+              <a href="javascript:void(0)"class="article__share-instagram"><i class="fab fa-instagram"></i>Instagram</a>
+              <a href="javascript:void(0)"class="article__share-twitter"><i class="fab fa-twitter"></i>Twitter</a>
+              <a href="javascript:void(0)"class="article__share-linkedin"><i class="fab fa-linkedin-in"></i>Linkedin</a>
+              <a href="javascript:void(0)"class="article__share-email"><i class="far fa-envelope"></i>Email</a>
+            </div> <hr>
+            <!-- share article end -->
+
+            <!-- related post start -->
+            <h6 class="article__share-title mb-md">Related Post</h6>
+            <div class="article__related-post">
+              <div class="sidebar">
+                <img src="assets/img/poster10.jpg" class="img-fluid">
+                <div class="sidebar__content">
+                  <h6>How much cost to do a movie like Hunger Games</h6>
+                  <a href="#" class="button__link">Learn More</a>
+                </div>
+              </div>
+              <div class="sidebar">
+                <img src="assets/img/poster4.jpg" class="img-fluid">
+                <div class="sidebar__content">
+                  <h6>How much cost to do a movie like Hunger Games</h6>
+                  <a href="#" class="button__link">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <!-- related post end -->
+          </div> <!-- sidebar__article-right -->
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!--===========================
+    FOOTER
+  ============================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="flex-container">
+
+        <div class="footer__1">
+          <a href="javascript:void(0)">
+            <img src="assets/img/footer_logo.png" class="footer__logo img-fluid">
+          </a>
+          <p class="footer__copyright">
+            &copy; Copyright 2020 Kallayas - <a href="javascript:void(0)">Mahmudul Hasan Bijoy</a>
+          </p>
+          <div class="footer__social-icon">
+            <a href="javascript:void(0)">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div> <!-- footer__1 -->
+
+        <div class="footer__2">
+          <h6 class="short-title">Movies & Serials</h6>
+          <div class="footer__lists">
+            <ul>
+              <li><a href="javascript:void(0)">Action</a></li>
+              <li><a href="javascript:void(0)">Adventure</a></li>
+              <li><a href="javascript:void(0)">Animation</a></li>
+              <li><a href="javascript:void(0)">Biography</a></li>
+              <li><a href="javascript:void(0)">Comedy</a></li>
+              <li><a href="javascript:void(0)">Crime</a></li>
+              <li><a href="javascript:void(0)">Documentary</a></li>
+              <li><a href="javascript:void(0)">Drama</a></li>
+              <li><a href="javascript:void(0)">Family</a></li>
+              <li><a href="javascript:void(0)">Fantasy</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void(0)">Film noir</a></li>
+              <li><a href="javascript:void(0)">History</a></li>
+              <li><a href="javascript:void(0)">Horror</a></li>
+              <li><a href="javascript:void(0)">Muscic</a></li>
+              <li><a href="javascript:void(0)">Musical</a></li>
+              <li><a href="javascript:void(0)">Mystery</a></li>
+              <li><a href="javascript:void(0)">Romance</a></li>
+              <li><a href="javascript:void(0)">Sci-Fi</a></li>
+              <li><a href="javascript:void(0)">Sport</a></li>
+              <li><a href="javascript:void(0)">Short film</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void(0)">Superhero</a></li>
+              <li><a href="javascript:void(0)">Thriller</a></li>
+              <li><a href="javascript:void(0)">War</a></li>
+              <li><a href="javascript:void(0)">Wetern</a></li>
+            </ul>
+
+          </div>
+        </div> <!-- footer__2 -->
+
+        <div class="footer__3">
+          <h6 class="short-title">Others</h6>
+          <div class="footer__lists">
+            <ul>
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="javascript:void(0)">Top rated movies</a></li>
+              <li><a href="javascript:void(0)">Box office</a></li>
+              <li><a href="javascript:void(0)">TV</a></li>
+              <li><a href="javascript:void(0)">Coming soon</a></li>
+              <li><a href="javascript:void(0)">Site index</a></li>
+              <li><a href="javascript:void(0)">Search</a></li>
+              <li><a href="javascript:void(0)">In theaters</a></li>
+              <li><a href="javascript:void(0)">Contact us</a></li>
+              <li><a href="javascript:void(0)">Register</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void(0)">News</a></li>
+              <li><a href="javascript:void(0)">Press room</a></li>
+              <li><a href="javascript:void(0)">Advertising</a></li>
+              <li><a href="javascript:void(0)">Jobs</a></li>
+              <li><a href="javascript:void(0)">Conditions of use</a></li>
+              <li><a href="javascript:void(0)">Privacy policy</a></li>
+              <li><a href="javascript:void(0)">Interest-based ads</a></li>
+            </ul>
+          </div>
+        </div> <!-- footer__3 -->
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery & Custom javaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

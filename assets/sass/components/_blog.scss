@@ -1,0 +1,28 @@
+.blog {
+	padding-bottom: 5rem;
+	&__movie {
+		display: flex;
+		align-items: center;
+		//justify-content: space-between;
+		gap: 1.5rem;
+		&:not(:first-child) {
+			margin-top: 5rem;
+		}
+		@include respond (mini-tab) {
+			flex-direction: column;
+		}
+		img {
+			width: 25rem;
+			height: 45rem;
+			object-fit: cover;
+			object-position: center;
+			@include respond (mini-tab) {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.movie__title {
+			font-size: 3rem;
+		}
+	}
+}

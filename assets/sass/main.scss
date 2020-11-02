@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/utilities";
+
+@import "components/navbar";
+@import "components/button";
+@import "components/category";
+@import "components/movie";
+@import "components/slider";
+@import "components/sidebar";
+@import "components/article";
+@import "components/blog";
+
+@import "layout/footer";
+@import "layout/grid";
+
+@import "pages/home";

@@ -1,0 +1,204 @@
+.movie {
+	position: relative;
+	z-index: 10;
+	text-align: right;
+	&__title {
+		font-size: 4rem;
+		font-weight: 600;
+		padding: 1.5rem 0 3rem 0;
+		text-transform: uppercase;
+		@include respond (tab-port) {
+			font-size: 3.5rem;
+		}
+		@include respond(phone) {
+			font-size: 3rem;
+		}
+	}
+	&__desc {
+		font-weight: 100;
+		padding-bottom: 3rem;
+		font-size: 1rem;
+		line-height: 1.8rem;
+		width: 60%;
+		@include respond(mini-tab) {
+			width: 100%;
+		}
+		&-100 {
+			width: 100%;
+		}
+	}
+	&__poster {
+		position: relative;
+		z-index: 10;
+		max-width: 100%;
+		@include respond (mini-tab) {
+			height: 30rem;
+			//width: 100%;
+		}
+		iframe {
+		    border: 0;
+		    width: 100%;
+		    height: 35rem;
+		    background-color: $black;
+		}
+	}
+	&__img {
+		img {
+			outline: 1px solid $img_outline;
+			outline-offset: .3rem;
+			transition: .3s all;
+			&:hover {
+				outline-color: $img_hover;
+			}
+		}
+		@include respond(mini-tab) {
+			display: flex;
+			justify-content: center;
+			//gap: 5rem;
+		}
+	}
+	&__trailer {
+		height: 100%;
+		width: 100%;
+		@include respond (mini-tab) {
+			padding-bottom: 4rem;
+		}
+	}
+	&__advertisement {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 60rem;
+		}
+	}
+	&__box {
+		display: none;
+		&-img {
+			outline: 1px solid $img_outline;
+			outline-offset: .3rem;
+			filter: brightness(60%);
+			transition: .3s all;
+			&:hover {
+				outline-color: $img_hover;
+				filter: brightness(90%);
+			}
+		}
+		&-title {
+			text-transform: capitalize;
+			font-size: 1.2rem;
+			font-weight: 300;
+			padding: 1rem 0;
+		}
+		&-meta {
+			color: #333;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@include respond (mini-phone) {
+				width: 26.5rem;
+			}
+		}
+		&-icon {
+			font-size: 1.2rem;
+			display: flex;
+			gap: 1rem;
+			a {
+				color: #333;
+				&:focus {
+					color: $button_red;
+				}
+				&:last-child {
+					color: yellow;
+				}
+			}
+		}
+	}
+	&__loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 3rem;
+		i {
+			margin-right: .5rem;
+		}
+	}
+	&__left {
+		position: relative;
+		z-index: 99;
+		padding: 10rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.movie__desc {
+			width: 50%;
+			@include respond (mini-tab) {
+				width: 100%;
+			}
+		}
+	}
+	&__column {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		.movie__title {
+			font-size: 1.8rem;
+		}
+		img {
+			width: 120rem;
+		}
+	}
+	&__content {
+		.movie__title {
+			padding: 0;
+			padding-bottom: 1rem;
+		}
+		p {
+			padding: 1rem 0;
+		}
+	}
+	&__item {
+		position: relative;
+		img {
+			outline: 1px solid $img_outline;
+			outline-offset: .3rem;
+			width: 100%;
+			height: 25rem;
+			object-fit: cover;
+			object-position: top;
+			transition: .3s all;
+			&:hover {
+				outline-color: $img_hover;
+			}
+		}
+		&-caption {
+			position: absolute;
+			left: 0;bottom: 0;font-size: 1rem;
+			background: rgba($black,.9);
+			padding: .5rem;text-align: justify
+		}
+	}
+	&__related-title {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: 400;
+		margin-top: 4rem;
+		color: #f7f7f7;
+	}
+	&__details {
+		text-transform: capitalize;
+		line-height: 2;
+		font-size: 1.4rem;
+		.category {
+			font-size: 1.4rem;
+			justify-content: left;
+			& > div {
+				font-size: 1.2rem;
+			}
+		}
+		a,
+		span {
+			color: $button_red;
+		}
+	}
+}
