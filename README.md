@@ -20,7 +20,7 @@
 - `npm run build:css`: Compile all the SASS files, concatinating, autoprefix and compress CSS/JS into a minified version
 - `npm run build:bootstrap`: Automatically make relevant files for bootstrap and put them into their related diretory
 
-##RUBY SASS INSTALL
+## RUBY SASS INSTALL
 
 - Download Ruby: Download `Ruby` from its official website & install it on your machine.
 - Check Version: After installation go to your command window and type `ruby -v` to check installed Ruby version.
